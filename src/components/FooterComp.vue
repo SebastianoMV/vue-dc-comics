@@ -2,7 +2,14 @@
   <footer>
       <!-- MAIN FOOTER -->
       <div class="main-footer">
-        <div class="container"></div>
+        <div class="container">
+          <div>
+
+          </div>
+          <div class="logo-bg">
+
+          </div>
+        </div>
 
       </div>
 
@@ -26,7 +33,26 @@ export default {
 @import "../assets/style/utilities";
 @import "../assets/style/var";
 
+.main-footer{
+  height: 400px;
+  background-image: url(../assets/img/footer-bg.jpg);
+  .container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+}
 
 
+
+
+.logo-bg{
+  height: 100%;
+  width: 40%;
+  background-image: url(../assets/img/dc-logo-bg.png);
+  background-position: center;
+  background-size: cover;
+}
 
 </style>

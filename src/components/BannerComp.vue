@@ -18,33 +18,37 @@
 export default {
   name: "BannerComp",
 
+  mounted(){
+    console.log(this.headFooterMenu[0].image);
+  },
+
   data(){
     return{
       headFooterMenu: [
         {
           name:'digital comics',
           href: '#',
-          image: '../assets/img/buy-comics-digital-comics.png',
+          image: require('../assets/img/buy-comics-digital-comics.png'),
         },
         {
           name:'dc merchandise',
           href: '#',
-          image: '../assets/img/buy-comics-digital-comics.png',
+          image: require('../assets/img/buy-comics-merchandise.png'),
         },
         {
           name:'subscription',
           href: '#',
-          image: '../assets/img/buy-comics-digital-comics.png',
+          image: require('../assets/img/buy-comics-shop-locator.png'),
         },
         {
           name:'comic shop locator',
           href: '#',
-          image: '../assets/img/buy-comics-digital-comics.png',
+          image: require('../assets/img/buy-comics-subscriptions.png'),
         },
         {
           name:'dc power visa',
           href: '#',
-          image: '../assets/img/buy-comics-digital-comics.png',
+          image: require('../assets/img/buy-dc-power-visa.svg'),
         }
       ]
     }
@@ -63,6 +67,7 @@ export default {
 .container{
   display: flex;
   height: 100%;
+  padding: 15px;
   
   ul{
       width: 100%;
