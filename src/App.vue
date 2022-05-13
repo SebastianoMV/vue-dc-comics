@@ -2,6 +2,7 @@
   <div>
     <HeaderComp/>
     <MainComp/>
+    <BannerComp/>
     <FooterComp/>
   </div>
 </template>
@@ -9,7 +10,9 @@
 <script>
 import HeaderComp from "./components/HeaderComp.vue";
 import MainComp from "./components/MainComp.vue";
+import BannerComp from "./components/BannerComp.vue";
 import FooterComp from "./components/FooterComp.vue";
+
 
 
 export default {
@@ -17,7 +20,9 @@ export default {
   components: {
     HeaderComp,
     MainComp,
-    FooterComp
+    BannerComp,
+    FooterComp,
+    
 }
 }
 </script>
