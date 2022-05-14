@@ -95,17 +95,24 @@ header{
     }
     ul{
       display: flex;
+      align-items: center;
+      height: 100px;
       li{
         margin: 10px;
+        height: 100%;
         a{
+          display: flex;
+          align-items: center;
+          height: 100%;
           font-weight: bold;
           color: black; 
           text-transform: uppercase;
+          border-bottom: 4px solid transparent;
           &:hover,
           &.active{
             color: $primary-color;
-            text-decoration: underline;
-            text-decoration-color: $primary-color;
+            border-bottom: 4px solid $primary-color;
+            
           }
         }
         

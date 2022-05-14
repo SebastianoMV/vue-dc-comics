@@ -67,21 +67,22 @@ export default {
 .container{
   display: flex;
   height: 100%;
-  padding: 15px;
   
   ul{
+    margin: 30px;
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-around;
       li{
         display: flex;
+        width: 100%;
         align-items: center;
         a{
           color: white;
           text-transform: uppercase;
           margin-left: 5px;
-          flex-shrink: 0.1;
+          width: 100%;
+          
         }
       }
       
