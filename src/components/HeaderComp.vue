@@ -95,12 +95,11 @@ header{
     }
     ul{
       display: flex;
-      list-style: none;
       li{
         margin: 10px;
         a{
-          color: black;
-          text-decoration: none; 
+          font-weight: bold;
+          color: black; 
           text-transform: uppercase;
           &:hover,
           &.active{

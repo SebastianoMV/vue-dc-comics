@@ -38,12 +38,12 @@ export default {
         {
           name:'subscription',
           href: '#',
-          image: require('../assets/img/buy-comics-shop-locator.png'),
+          image: require('../assets/img/buy-comics-subscriptions.png'),
         },
         {
           name:'comic shop locator',
           href: '#',
-          image: require('../assets/img/buy-comics-subscriptions.png'),
+          image: require('../assets/img/buy-comics-shop-locator.png'),
         },
         {
           name:'dc power visa',
@@ -73,23 +73,23 @@ export default {
       width: 100%;
       display: flex;
       align-items: center;
-      list-style: none;
       justify-content: space-around;
       li{
         display: flex;
         align-items: center;
         a{
           color: white;
-          text-decoration: none; 
           text-transform: uppercase;
-          margin-left: 10px;
+          margin-left: 5px;
+          flex-shrink: 0.1;
         }
       }
       
     }
 }
 img{
-  width: 40px;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 </style>

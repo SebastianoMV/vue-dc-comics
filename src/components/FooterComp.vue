@@ -6,14 +6,51 @@
           <div class="ul-container-footer">
             <div>
                 <h2>DC COMICS</h2>
+                <ul>
+                  <li><a href="#">Characters</a></li>
+                  <li><a href="#">Comics</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">TV</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">Video</a></li>
+                  <li><a href="#">News</a></li>
+              
+                </ul>
                 <h2>SHOP</h2>
+                <ul>
+                  <li><a href="#">Shop DC</a></li>
+                  <li><a href="#">Shop DC Collectibles</a></li>
+                  
+                </ul>
             </div>
             <div>
               <h2>DC</h2>
+              <ul>
+                  <li><a href="#">Terms Of Use</a></li>
+                  <li><a href="#">Privacy policy (New)</a></li>
+                  <li><a href="#">Ad Choises</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Subscriptions</a></li>
+                  <li><a href="#">Talent Workshops</a></li>
+                  <li><a href="#">CPSC Certificates</a></li>
+                  <li><a href="#">RAtings</a></li>
+                  <li><a href="#">Shop Help</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              
+                </ul>
             
             </div>
             <div>
               <h2>SITES</h2>
+              <ul>
+                <li><a href="#">DC</a></li>
+                <li><a href="#">MAD Magazine</a></li>
+                <li><a href="#">DC Kids</a></li>
+                <li><a href="#">DC Universe</a></li>
+                <li><a href="#">DC Power Visa</a></li>
+                
+              </ul>
 
             </div>
 
@@ -66,11 +103,25 @@ export default {
     justify-content: space-between;
     height: 100%;
     .ul-container-footer{
+      padding-top: 20px;
       width: 40%;
       height: 100%;
       display: flex;
       justify-content: space-between;
       color: white;
+      h2{
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      ul li{
+          margin-top: 5px;
+        } 
+        a{
+          color: rgb(174, 172, 172);
+          
+          
+        }
+      
     }
   }
   
@@ -94,6 +145,7 @@ export default {
        
     };
     .social{
+      color: $primary-color;
       display: flex;
       align-items: center;
       img{
