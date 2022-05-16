@@ -3,7 +3,7 @@
         <div class="container">
           <ul>
           <li v-for="(item, index) in headFooterMenu" :key="index">
-            <img v-bind:src="item.image" alt="">
+            <img :src="item.image" :alt="item.name">
             <a>{{item.name}}</a>
           </li>
           
@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import dataBanner from "../assets/data/dataBanner";
 export default {
   name: "BannerComp",
 
@@ -24,33 +25,7 @@ export default {
 
   data(){
     return{
-      headFooterMenu: [
-        {
-          name:'digital comics',
-          href: '#',
-          image: require('../assets/img/buy-comics-digital-comics.png'),
-        },
-        {
-          name:'dc merchandise',
-          href: '#',
-          image: require('../assets/img/buy-comics-merchandise.png'),
-        },
-        {
-          name:'subscription',
-          href: '#',
-          image: require('../assets/img/buy-comics-subscriptions.png'),
-        },
-        {
-          name:'comic shop locator',
-          href: '#',
-          image: require('../assets/img/buy-comics-shop-locator.png'),
-        },
-        {
-          name:'dc power visa',
-          href: '#',
-          image: require('../assets/img/buy-dc-power-visa.svg'),
-        }
-      ]
+      headFooterMenu: dataBanner
     }
   }
 }
