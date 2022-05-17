@@ -8,7 +8,10 @@
     <div class="container">
       <CardComp v-for="(card,index) in dataDc" :key="index" :card="card"/>
     </div>
-    <div class="btn-more">Load more</div>
+    <div class="btn-container">
+      <div class="btn-more">Load more</div>
+    </div>
+    
     
  
    
@@ -35,10 +38,10 @@ export default {
 @import "../assets/style/var";
   main{
     background-color: #1c1c1c;
-    padding: 20px;
     .container{
       display: flex;
       flex-wrap: wrap;
+      padding-bottom: 20px;
     }
     color: white;
     .jumbo{
@@ -53,6 +56,9 @@ export default {
         text-transform: uppercase;
         font-weight: bold;
       }
+    }
+    .btn-container{
+      padding: 30px;
     }
     .btn-more{
       width: 120px;
